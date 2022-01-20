@@ -1,0 +1,153 @@
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: bold;
+    
+    src: url("./fonts/IRANYekan/eot/iranyekanwebbold(fanum).eot");
+    src: url("./fonts/IRANYekan/eot/iranyekanwebbold(fanum).eot?#iefix")
+        format("embedded-opentype"),
+      /* IE6-8 */ url("./fonts/IRANYekan/woff2/iranyekanwebbold(fanum).woff2")
+        format("woff2"),
+      /* FF39+,Chrome36+, Opera24+*/
+        url("./fonts/IRANYekan/woff/iranyekanwebbold(fanum).woff") format("woff"),
+      /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url("./fonts/IRANYekan/ttf/iranyekanwebbold(fanum).ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: 300;
+    src: url("./fonts/IRANYekan/eot/iranyekanweblight(fanum).eot");
+    src: url("./fonts/IRANYekan/eot/iranyekanweblight(fanum).eot?#iefix")
+        format("embedded-opentype"),
+      /* IE6-8 */ url("./fonts/IRANYekan/woff2/iranyekanweblight(fanum).woff2")
+        format("woff2"),
+      /* FF39+,Chrome36+, Opera24+*/
+        url("./fonts/IRANYekan/woff/iranyekanweblight(fanum).woff") format("woff"),
+      /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url("./fonts/IRANYekan/ttf/iranyekanweblight(fanum).ttf")
+        format("truetype");
+  }
+  
+  @font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: normal;
+    src: url("./fonts/IRANYekan/eot/iranyekanwebregular(fanum).eot");
+    src: url("./fonts/IRANYekan/eot/iranyekanwebregular(fanum).eot?#iefix")
+        format("embedded-opentype"),
+      /* IE6-8 */ url("./fonts/IRANYekan/woff2/iranyekanwebregular(fanum).woff2")
+        format("woff2"),
+      /* FF39+,Chrome36+, Opera24+*/
+        url("./fonts/IRANYekan/woff/iranyekanwebregular(fanum).woff")
+        format("woff"),
+      /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url("./fonts/IRANYekan/ttf/iranyekanwebregular(fanum).ttf")
+        format("truetype");
+  }
+  
+  *{
+      font-family: iranyekan;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 25px ;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: right;
+    padding: 10px;
+  }
+
+
+
+
+  @media (min-width : 768px){
+    #sidebar{
+        height: calc(100vh - 72px) ;
+        position: fixed;
+
+    }
+
+
+    #main{
+        width: 100%;
+        transition: .4s linear;
+    }
+    
+    #sidebar.collapse{
+        transform: translate(100% , 0);
+        transition: transform .4s linear;
+    }
+
+    #sidebar.collapsing{
+        transform: translate(100% , 0);
+        transition: transform .4s linear;
+    }
+
+    #sidebar.collapse.show{
+        transform: translate(0 , 0);
+        transition: transform .4s linear;
+    }
+    
+    #sidebar.collapse.show + #main{
+        transition: .3s linear;
+        width: 83.33%;
+    }
+
+    /* ------------------------------ */
+
+    #sidee.collapse{
+        transform: translate(100% , 0);
+        transition: transform .4s linear;
+    }
+
+    #sidee.collapsing{
+        transform: translate(100% , 0);
+        transition: transform .4s linear;
+    }
+
+    #sidee.collapse.show{
+        transform: translate(0 , 0);
+        transition: transform .7s linear;
+    }
+    
+    #sidee.collapse.show + #main{
+        transition: .3s linear;
+        width: 83.33%;
+    }
+
+  }
+
+  #sidebar .nav-link {
+    color: white;
+}
+
+  #sidebar a{
+      color: white;
+      text-decoration: unset;
+      
+  }
+
+
+  #sidebar .fa-angle-left{
+    transform: rotate(-90deg);
+    }
+
+  #sidebar .collapsed .fa-angle-left{
+      transform: rotate(0);
+  }
+
+  #sidebar .fa{
+      transition: .3s transform ease-in-out;
+  }
+  #sidebar .collapsing{
+      height: 0;
+  }
+.padding{
+    padding: 20px 50px 50px 50px;
+}
